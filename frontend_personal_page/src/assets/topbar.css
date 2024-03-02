@@ -1,0 +1,21 @@
+.topbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.topbar ul{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 4;
+    list-style-type: none;
+    margin:0;
+    width: 100vw;
+    background-color:aquamarine;
+}
+
+.topbar ul li{
+    padding: 25px;
+    text-align: center;
+    width: 100%;
+}
