@@ -1,5 +1,6 @@
 import React from 'react'
 import "./assets/about.css"
+import ContactButtons from './ContactButtons';
 
 function About() {
     return(
@@ -15,6 +16,7 @@ function About() {
                 <p>Holds a degree in Business Statistics and a Master's in Web analytics, 
                     combining my two major passions—software development and data.</p>
             </div>
+            <ContactButtons />
         </>
     )
 }
