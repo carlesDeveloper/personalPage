@@ -1,5 +1,5 @@
 .topbar{
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
 }
@@ -18,4 +18,10 @@
     padding: 25px;
     text-align: center;
     width: 100%;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+}
+
+li.active {
+    border-bottom: 5px solid red;
 }

@@ -7,12 +7,15 @@ import Experience from './Experience'
 import Contact from './Contact'
 import Strength from './Strength'
 import TopBar from './TopBar'
+import About from './About'
 
 function App() {
 
   return (
     <>
       <TopBar />
+      <br />
+      <About />
       {/* <Experience />
       <Skills />
       <Strength />

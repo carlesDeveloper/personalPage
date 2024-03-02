@@ -1,0 +1,18 @@
+.title__page{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 10vh;
+    letter-spacing: 0.3rem;
+}
+
+.content__page{
+    width: 55vw;
+    text-align: center;
+    margin: auto;
+    padding: 30px;
+}
+
+.content__page p{
+    line-height: 1.5rem;
+    padding: 15px;
+}

@@ -6,7 +6,7 @@ function TopBar(){
         <>
             <div className='topbar'>
                 <ul>
-                    <li>About</li>
+                    <li className='active'>About</li>
                     <li>Experience</li>
                     <li>Skills</li>
                     <li>Contact</li>
