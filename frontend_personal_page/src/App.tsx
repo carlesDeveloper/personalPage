@@ -17,6 +17,7 @@ function App() {
       <br />
       <About />
       <Strength />
+      <Skills />
       {/* 
       <Skills />
       

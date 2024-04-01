@@ -1,0 +1,52 @@
+[
+    {
+        "type": "skill",
+        "skill": "Python",
+        "score": "2"
+    },
+    {
+        "type": "skill",
+        "skill": "R",
+        "score": "7"
+    },
+    {
+        "type": "skill",
+        "skill": "Javascript",
+        "score": "9"
+    },
+    {
+        "type": "skill",
+        "skill": "ReactJS",
+        "score": "9"
+    },
+    {
+        "type": "skill",
+        "skill": "NodeJS",
+        "score": "5"
+    },
+    {
+        "type": "skill",
+        "skill": "Git",
+        "score": "9"
+    },
+    {
+        "type": "skill",
+        "skill": "Docker",
+        "score": "8"
+    },
+    {
+        "type": "skill",
+        "skill": "HTML",
+        "score": "9"
+    },
+    {
+        "type": "skill",
+        "skill": "CSS",
+        "score": "8"
+    },
+    {
+        "type": "skill",
+        "skill": "Bash Scripting",
+        "score": "6"
+    }
+]
