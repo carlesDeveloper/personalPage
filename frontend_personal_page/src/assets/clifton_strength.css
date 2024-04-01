@@ -1,0 +1,58 @@
+.clifton__strength__section{
+    background-color: black;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.title__section{
+    height: 10vh;
+    line-height: 10vh;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 8px;
+}
+
+.strength__skills{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50vw;
+    margin: auto;
+    gap: 5px;
+    row-gap: 40px;
+    
+}
+
+.skill{
+    width: 13vw;
+    height: 13vw;
+    line-height: 13vw;
+    background-color: grey;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+.strategy_thinking{
+    background-color: rgb(204, 8, 8);
+}
+
+.influencing{
+    background-color: green;
+}
+
+.executing{
+    background-color: orange;
+}
+
+.relationship_building{
+    background-color: #3B70CC;
+}

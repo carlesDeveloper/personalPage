@@ -16,9 +16,10 @@ function App() {
       <TopBar />
       <br />
       <About />
-      {/* <Experience />
-      <Skills />
       <Strength />
+      {/* 
+      <Skills />
+      
       <Contact /> */}
     </>
   )

@@ -1,0 +1,23 @@
+.contact__buttons{
+    width: 15vw;
+    margin: auto;
+}
+
+.linkedin__contact{
+}
+
+.linkedin__contact a{
+    cursor: pointer;
+    color: blue;
+    padding: 10px;
+    height: 50px;
+    background-color: red;
+    text-decoration: none;
+}
+
+.linkedin__contact svg{
+    /* padding: 10px; */
+    padding-right: 15px;
+    margin-left: 5px;
+    background-color: grey;
+}
