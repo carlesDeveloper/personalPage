@@ -16,8 +16,9 @@ function App() {
       <TopBar />
       <br />
       <About />
-      <Strength />
+      
       <Skills />
+      <Strength />
       {/* 
       <Skills />
       

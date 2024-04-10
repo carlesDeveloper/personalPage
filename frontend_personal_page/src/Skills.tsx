@@ -12,7 +12,7 @@ import {
 
 import { Bar } from 'react-chartjs-2';
 import skillsData from "./skills.json"
-
+import "./assets/skills.css"
 
 ChartJS.register(
     CategoryScale,
@@ -36,10 +36,7 @@ function Skills() {
         plugins: {
           legend: {
             position: 'right' as const,
-          },
-          title: {
-            display: true,
-            text: 'SKILLS CHART',
+            display: false
           },
         },
     };
@@ -48,7 +45,7 @@ function Skills() {
         labels,
         datasets: [
           {
-            label: 'Dataset 1',
+            label: 'Rating',
             data: skillsData.map(skill => skill.score),
             borderColor: 'rgb(255, 99, 132)',
             backgroundColor: 'rgba(255, 99, 132, 0.5)',
@@ -56,7 +53,17 @@ function Skills() {
         ],
       };
     return(
-        <><Bar options={options} data={data} /></>
+      <>
+        <div className="skills__content">
+          <div className="skills__title">
+              Skills
+          </div>
+          <div className='skill__plot'>
+            <Bar options={options} data={data} style={{"width": "100%", "height": "100%"}}/>
+          </div>
+        </div>
+
+      </>
     )
 }
 
