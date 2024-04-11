@@ -1,0 +1,52 @@
+[
+    {
+        "company": "Future Connections",
+        "logo": "images/logo_futureconnections_mini.jpeg",
+        "role": "Fullstack developer",
+        "dates": "April 2022 - February 2024",
+        "description": [
+            "Frontend development of multiple web applications for Orange and Telefónica using: ReactJS, JavaScript, Typescript, HTML, CSS, and Vue.",
+            "Developed multiple backend applications using Node.js, Flask, and PostgreSQL.",
+            "Product design using Figma.",
+            "Use of CSS preprocessor SASS",
+            "Built using Docker in both development and production environments.",
+            "Deploy applications using Nginx & Docker.",
+            "Task and code version control using Git, Jira, and Bitbucket",
+            "Develop and maintain documentation for both projects and deployments.",
+            "Proficient in Bash scripting."
+        ]
+    },
+    {
+        "company": "Santander Bank",
+        "logo": "images/logo_santander_mini.png",
+        "role": "Fullstack developer",
+        "dates": "January 2018 - March 2022",
+        "description": [
+            "Full-stack development of multiple web applications for Banco Santander using HTML, CSS, Javascript, Jquery, Node, or Django.",
+            "Developing documentation for all projects.",
+            "Worked on the migration of legacy applications using component-based software such as React, Angular, and Vue, with a focus on React.",
+            "Version control with Gitlab.",
+            "Built applications using Docker.",
+            "Proficient in Bash scripting."
+        ]
+    },
+    {
+        "company": "Ymedia",
+        "logo": "images/logo_ymedia.png",
+        "role": "Data analyst",
+        "dates": "August 2017 - January 2018",
+        "description": [
+            "Frontend development of multiple web applications for Orange and Telefónica using: ReactJS, JavaScript, Typescript, HTML, CSS, and Vue.",
+            "Developed multiple backend applications using Node.js, Flask, and PostgreSQL.",
+            "Product design using Figma.",
+            "Use of CSS preprocessor SASS",
+            "Built using Docker in both development and production environments.",
+            "Deploy applications using Nginx & Docker.",
+            "Task and code version control using Git, Jira, and Bitbucket",
+            "Develop and maintain documentation for both projects and deployments.",
+            "Proficient in Bash scripting."
+        ]
+    }
+    
+    
+]
