@@ -1,18 +1,19 @@
-.title__page{
+.about__title{
     text-align: center;
     font-size: 2rem;
     margin-top: 10vh;
     letter-spacing: 0.3rem;
 }
 
-.content__page{
+.about__content{
     width: 55vw;
     text-align: center;
     margin: auto;
     padding: 30px;
+    height: 92vh;
 }
 
-.content__page p{
+.about__text p{
     line-height: 1.5rem;
     padding: 15px;
 }

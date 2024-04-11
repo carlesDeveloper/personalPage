@@ -1,11 +1,13 @@
 .experience__content{
     margin: auto;
     display: block;
-    width: 70vw;
-    margin-top: 20px;
+    height: 92vh;
+    background-color: grey;
 }
 
 .experience__title{
+    margin-top: 3vh;
+    padding-top: 5vh;
     text-align: center;
     font-size: 1.8rem;
     font-weight: bold;
@@ -13,6 +15,9 @@
 }
 
 .experience__cards{
+    width: 60%;
+    margin: auto;
+    margin-top: 5vh;
     display: flex;
     justify-content: center;
     align-items: flex-start;

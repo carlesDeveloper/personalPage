@@ -1,11 +1,9 @@
 .contact__content{
-    width: 100vw;
     display: block;
     text-align: center;
     margin: auto;
-    margin-top: 40px;
     background-color: grey;
-    height: 90vh;
+    height: 92vh;
     padding-top: 5vh;
 }
 .contact__title{
