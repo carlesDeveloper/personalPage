@@ -2,7 +2,7 @@
     margin: auto;
     display: block;
     height: 92vh;
-    background-color: grey;
+    background-color: #F0F1F1;
 }
 
 .experience__title{
@@ -25,11 +25,36 @@
 }
 
 .header__card{
-    background-color: red;
+    background-image: linear-gradient( #42f7bb,rgb(25, 101, 114));
+    padding: 15px;
+    color: #000;
 }
+.logo__card{
+    float:left;
+    margin-right: 10px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
 
+}
+.title__card{
+}
+.role__card{
+    font-size: 1.5rem;
+}
+.dates__card{
+
+}
 .card__icon{
-    border: 1px solid black;
+    border: 3px solid #ffffff;
     border-radius: 100%;
     width: 70px;
+}
+
+.card-body{
+    padding: 0 !important;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.card-text{
+    padding: 20px 0;
 }

@@ -2,7 +2,7 @@
     display: block;
     text-align: center;
     margin: auto;
-    background-color: grey;
+    background-color: #F0F1F1;
     height: 92vh;
     padding-top: 5vh;
 }
@@ -14,13 +14,13 @@
 }
 .contact__modal{
     width: 60%;
-    border: 1px solid black;
     border-radius: 10px;
     padding: 40px;
     position: relative;
     padding-top: 100px;
     margin: auto;
     margin-top: 100px;
+    background-color: #FFFFFF;
 }
 .personal__logo img{
     position: absolute;
@@ -29,6 +29,7 @@
     width: 100px;
     border-radius: 100%;
     border: 10px solid white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
 }
 
 .personal__name{

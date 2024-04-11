@@ -9,11 +9,13 @@ export default function CustomCard({ title, dates, content, img, role }) {
             
             <CardBody>
                 <div className="header__card">
-                    <CardTitle>
-                        <img src={img} className='card__icon'></img>
-                        {title}
-                    </CardTitle>
-                    <CardSubtitle>{role}{dates}</CardSubtitle>
+                        <div className="logo__card">
+                            <img src={img} className='card__icon'></img>
+                        </div>
+                        
+                        <div className="role__card">{role}</div>
+                        <div className="title__card">{title}</div>
+                        <div className="dates__card">{dates}</div>
                 </div>
                 
                 <CardText>
