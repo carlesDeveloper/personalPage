@@ -19,10 +19,7 @@ function App() {
       <Experience />
       <Skills />
       <Strength />
-      {/* 
-      <Skills />
-      
-      <Contact /> */}
+      <Contact />
     </>
   )
 }

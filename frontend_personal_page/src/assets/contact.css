@@ -1,0 +1,43 @@
+.contact__content{
+    width: 60vw;
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30vh;
+    background-color: red;
+}
+.contact__title{
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+    margin-bottom: 50px;
+}
+.contact__modal{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 40px;
+    position: relative;
+    padding-top: 100px;
+    margin-top: 100px;
+}
+.personal__logo img{
+    position: absolute;
+    top: -64px;
+    right: 522px;
+    width: 100px;
+    border-radius: 100%;
+    border: 10px solid white;
+}
+
+.personal__name{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.personal__description{
+    margin: 15px;
+    font-size: 1.3rem;
+}
