@@ -8,18 +8,22 @@ import Contact from './Contact'
 import Strength from './Strength'
 import TopBar from './TopBar'
 import About from './About'
+import RouterProvider from './context/routerContext'
+
 
 function App() {
 
   return (
     <>
-      <TopBar />
-      <br />
-      <About />
-      <Experience />
-      <Skills />
-      <Strength />
-      <Contact />
+        <RouterProvider>
+          <TopBar />
+          <br />
+          <About />
+          <Experience />
+          <Skills />
+          <Strength />
+          <Contact />
+        </RouterProvider>
     </>
   )
 }

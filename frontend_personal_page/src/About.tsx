@@ -5,7 +5,7 @@ import ContactButtons from './ContactButtons';
 function About() {
     return(
         <>
-            <div className='about__content'>
+            <div className='about__content' id='about'>
                 <div className='about__title'>
                     <h2>About me</h2>
                 </div>

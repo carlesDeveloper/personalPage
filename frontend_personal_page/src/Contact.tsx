@@ -6,7 +6,7 @@ import PersonalLogo from '../public/images/imagenCV.jpg'
 function Contact() {
     return(
         <>
-            <div className="contact__content">
+            <div className="contact__content" id='contact'>
                 <div className="contact__title">Let's connect</div>
                 <div className="contact__modal">
                     <div className="personal__logo">

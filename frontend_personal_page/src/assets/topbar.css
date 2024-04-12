@@ -20,6 +20,7 @@
     width: 100%;
     letter-spacing: 0.1rem;
     font-weight: bold;
+    cursor: pointer;
 }
 
 li.active {

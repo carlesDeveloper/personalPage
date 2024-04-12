@@ -10,7 +10,7 @@ function Experience() {
     }, [])
     return (
         <>
-            <div className="experience__content">
+            <div className="experience__content" id='experience'>
                 <div className="experience__title">Experience</div>
                 <div className="experience__cards">
                     {data.length > 0 ? (

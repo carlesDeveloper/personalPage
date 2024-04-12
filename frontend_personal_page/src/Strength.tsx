@@ -4,7 +4,7 @@ import "./assets/clifton_strength.css"
 function Strength() {
     return(
         <>
-            <div className="clifton__strength__section">
+            <div className="clifton__strength__section" id='strength'>
                 <p className='title__section'>Clifton Strengths</p>
             
                 <div className="strength__skills">
