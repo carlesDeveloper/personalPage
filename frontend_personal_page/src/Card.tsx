@@ -3,7 +3,6 @@ import { Card, CardBody, CardSubtitle, CardText, CardTitle } from 'reactstrap'
 import "./assets/experience.css"
 
 export default function CustomCard({ title, dates, content, img, role }) {
-    console.log(img)
     return (
         <Card>
             
