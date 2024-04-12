@@ -57,3 +57,92 @@
 .relationship_building{
     background-color: #3B70CC;
 }
+
+.skill1 {
+animation: animarskill1 1s ease-in-out;
+}
+
+.skill2 {
+animation: animarskill2 1.5s ease-in-out; /* Retraso de 0.5s */
+}
+
+.skill3 {
+animation: animarskill3 2s ease-in-out;  /* Retraso de 1s */
+}
+.skill4 {
+    animation: animarskill4 2.5s ease-in-out;
+}
+
+.skill5 {
+    animation: animarskill5 3s ease-in-out; /* Retraso de 0.5s */
+}
+
+.skill6 {
+    animation: animarskill6 3.5s ease-in-out;  /* Retraso de 1s */
+}
+
+@keyframes animarskill1 {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes animarskill2 {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes animarskill3 {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes animarskill4 {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes animarskill5 {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes animarskill6 {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
