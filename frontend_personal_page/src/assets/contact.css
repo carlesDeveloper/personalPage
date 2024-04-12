@@ -29,7 +29,18 @@
     width: 100px;
     border-radius: 100%;
     border: 10px solid white;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    animation: infinite;
+    animation-name: arribaAbajo;
+    animation-duration: 3s;
+    
+    
+}
+
+@keyframes arribaAbajo{
+    0%{top: -64px;}
+    50%{top: -50px;}
+    100%{top: -64px;}
 }
 
 .personal__name{
