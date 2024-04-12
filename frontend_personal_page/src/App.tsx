@@ -27,9 +27,9 @@ function App() {
         setActiveContact(false)
 
         const scrollTop = window.scrollY;
-        if(scrollTop < 880){
+        if(scrollTop < 780){
             setActiveAbout(true)
-        } else if(scrollTop < 1700){
+        } else if(scrollTop < 1600){
             setActiveExperience(true)
         } else if(scrollTop < 3300){
             setActiveSkills(true)
