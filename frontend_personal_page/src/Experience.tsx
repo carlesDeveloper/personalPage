@@ -1,9 +1,11 @@
-import React,  { useEffect, useState } from 'react'
+import React,  { useContext, useEffect, useState } from 'react'
 import CustomCard from './Card'
 import "./assets/experience.css"
 import ExperienceData from "./experience.json"
+import { RouterContext } from './context/routerContext'
 
 function Experience() {
+    const {activeExperience} = useContext(RouterContext)
     const [data, setData] = useState([])
     useEffect(() => {
         setData(ExperienceData)
@@ -22,6 +24,7 @@ function Experience() {
                                     content={e.description}
                                     img={e.logo}
                                     role={e.role}
+                                    className={activeExperience ? 'card__animation' : ''}
                                 />
                             </>
                         ))

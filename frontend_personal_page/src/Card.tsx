@@ -2,9 +2,9 @@ import React from 'react'
 import { Card, CardBody, CardSubtitle, CardText, CardTitle } from 'reactstrap'
 import "./assets/experience.css"
 
-export default function CustomCard({ title, dates, content, img, role }) {
+export default function CustomCard({ title, dates, content, img, role, className }) {
     return (
-        <Card>
+        <Card className={className}>
             
             <CardBody>
                 <div className="header__card">
