@@ -27,7 +27,6 @@ function App() {
         setActiveContact(false)
 
         const scrollTop = window.scrollY;
-        console.log(scrollTop)
         if(scrollTop < 880){
             setActiveAbout(true)
         } else if(scrollTop < 1700){
