@@ -36,9 +36,27 @@ function Skills() {
         plugins: {
           legend: {
             position: 'right' as const,
-            display: false
+            display: true,
+            labels: {
+              font: {
+                  weight: '600',
+              }
+          }
           },
         },
+        scales: {
+          y: {
+            ticks: {
+              font: {
+                size: '20',
+                weight: 'bold'
+              }
+            },
+            grid: {
+              display: false
+            }
+          }
+      }
     };
 
     const data = {
@@ -47,8 +65,8 @@ function Skills() {
           {
             label: 'Rating',
             data: skillsData.map(skill => skill.score),
-            borderColor: 'rgb(255, 99, 132)',
-            backgroundColor: 'rgba(255, 99, 132, 0.5)',
+            borderColor: '#7FFFD4',
+            backgroundColor: '#7FFFD4',
           }
         ],
       };

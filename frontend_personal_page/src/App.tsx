@@ -49,7 +49,7 @@ function App() {
     <>
         
         <TopBar />
-        <br />
+        {/* <br /> */}
         <About />
         <Experience />
         <Skills />

@@ -36,15 +36,10 @@
         "role": "Data analyst",
         "dates": "August 2017 - January 2018",
         "description": [
-            "Frontend development of multiple web applications for Orange and Telefónica using: ReactJS, JavaScript, Typescript, HTML, CSS, and Vue.",
-            "Developed multiple backend applications using Node.js, Flask, and PostgreSQL.",
-            "Product design using Figma.",
-            "Use of CSS preprocessor SASS",
-            "Built using Docker in both development and production environments.",
-            "Deploy applications using Nginx & Docker.",
-            "Task and code version control using Git, Jira, and Bitbucket",
-            "Develop and maintain documentation for both projects and deployments.",
-            "Proficient in Bash scripting."
+            "Data visualization using various tools such as Datorama and Tableau.",
+            "Development of predictive models in R to optimize marketing campaigns.",
+            "Attribution models in R to improve campaigns both before and after.",
+            "Creation of Web tools using the Shiny library of R to prepare prediction tools for clients, also using R for the prediction part."
         ]
     }
     

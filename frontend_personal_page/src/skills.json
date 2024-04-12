@@ -1,18 +1,8 @@
 [
     {
         "type": "skill",
-        "skill": "Python",
-        "score": "2"
-    },
-    {
-        "type": "skill",
-        "skill": "R",
-        "score": "7"
-    },
-    {
-        "type": "skill",
         "skill": "Javascript",
-        "score": "9"
+        "score": "9.5"
     },
     {
         "type": "skill",
@@ -27,7 +17,7 @@
     {
         "type": "skill",
         "skill": "Git",
-        "score": "9"
+        "score": "9.5"
     },
     {
         "type": "skill",
@@ -48,5 +38,15 @@
         "type": "skill",
         "skill": "Bash Scripting",
         "score": "6"
+    },
+    {
+        "type": "skill",
+        "skill": "R",
+        "score": "7"
+    },
+    {
+        "type": "skill",
+        "skill": "Python",
+        "score": "2"
     }
 ]
