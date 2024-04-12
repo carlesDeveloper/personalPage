@@ -12,6 +12,7 @@
     list-style-type: none;
     margin:0;
     background-color:aquamarine;
+    padding-left: 0;
 }
 
 .topbar ul li{
