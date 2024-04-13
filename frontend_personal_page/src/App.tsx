@@ -1,6 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useEffect, useContext } from 'react'
 import './App.css'
 import Skills from './Skills'
 import Experience from './Experience'
@@ -13,10 +11,10 @@ import { RouterContext } from './context/routerContext'
 
 
 function App() {
-  const {activeAbout, setActiveAbout,
-    activeExperience, setActiveExperience,
-    activeSkills, setActiveSkills,
-    activeContact, setActiveContact} = useContext(RouterContext)
+  const {setActiveAbout,
+    setActiveExperience,
+    setActiveSkills,
+    setActiveContact} = useContext(RouterContext)
 
   useEffect(() => {
     const handleScroll = () => {

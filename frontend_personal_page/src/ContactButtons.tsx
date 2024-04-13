@@ -1,6 +1,3 @@
-import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import "./assets/contact_buttons.css"
 import LinkedInButton from './LinkedinButton';
 

@@ -1,8 +1,8 @@
-import React from 'react'
-import { Card, CardBody, CardSubtitle, CardText, CardTitle } from 'reactstrap'
+import { Card, CardBody, CardText } from 'reactstrap'
 import "./assets/experience.css"
+import { Experience } from './interfaces/Experience'
 
-export default function CustomCard({ title, dates, content, img, role, className }) {
+export default function CustomCard({ title, dates, content, img, role, className }:Experience ) {
     return (
         <Card className={className}>
             

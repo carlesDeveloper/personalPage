@@ -1,4 +1,3 @@
-import React from 'react'
 import "./assets/about.css"
 import ContactButtons from './ContactButtons';
 

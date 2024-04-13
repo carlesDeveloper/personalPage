@@ -1,6 +1,7 @@
-import React, { createContext, useState } from 'react'
+import { createContext, useState } from 'react'
+import { RouterInterface } from '../interfaces/RouterInterface'
 
-export const RouterContext = createContext()
+export const RouterContext = createContext<RouterInterface>(null)
 
 const RouterProvider = (props) => {
     const [activeAbout, setActiveAbout] = useState(true)

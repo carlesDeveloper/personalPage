@@ -1,4 +1,3 @@
-import React from 'react'
 import {
     Chart as ChartJS,
     CategoryScale,
@@ -26,38 +25,33 @@ ChartJS.register(
 function Skills() {
     const labels = skillsData.map(s => s.skill)
     const options = {
-        indexAxis: 'y' as const,
-        elements: {
-          bar: {
-            borderWidth: 2,
-          },
+      indexAxis: 'y' as const,
+      elements: {
+        bar: {
+          borderWidth: 2
+        }
+      },
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'right' as const,
+          display: true
         },
-        responsive: true,
-        plugins: {
-          legend: {
-            position: 'right' as const,
-            display: true,
-            labels: {
-              font: {
-                  weight: '600',
-              }
-          }
-          },
-        },
-        scales: {
-          y: {
-            ticks: {
-              font: {
-                size: '20',
-                weight: 'bold'
-              }
-            },
-            grid: {
-              display: false
+      },
+      scales: {
+        y: {
+          ticks: {
+            font: {
+              size: 20,
+              // weight: 'bold'
             }
+          },
+          grid: {
+            display: false
           }
-      }
-    };
+        }
+    }
+  };
 
     const data = {
         labels,

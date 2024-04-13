@@ -1,9 +1,9 @@
-import React from 'react';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { ButtonInterface } from './interfaces/ButtonInterface';
 
 
-const LinkedInButton = ({ url, text }) => {
+const LinkedInButton = ({ url, text }:ButtonInterface ) => {
   return (
     <a
       href={url}

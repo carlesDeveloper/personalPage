@@ -1,5 +1,4 @@
-import React, { useContext, useState } from 'react'
-import { Link } from 'react-router-dom';
+import { useContext } from 'react'
 import { RouterContext } from './context/routerContext';
 import "./assets/topbar.css"
 
@@ -9,7 +8,7 @@ function TopBar(){
         activeSkills, setActiveSkills,
         activeContact, setActiveContact} = useContext(RouterContext)
 
-    const goToUrl = (url) => {
+    const goToUrl = (url: string) => {
         window.location.href = "#" + url;
         
         setActiveAbout(false)
@@ -36,10 +35,10 @@ function TopBar(){
                     <Link to="/#experience">Experience</Link>
                     <Link to="/#skills">Skills</Link>
                     <Link to="/#contact">Contact</Link> */}
-                    <li className={activeAbout ? 'active' : ''} onClick={(e) => goToUrl("about")}>About</li>
-                    <li className={activeExperience ? 'active' : ''} onClick={(e) => goToUrl("experience")}>Experience</li>
-                    <li className={activeSkills ? 'active' : ''} onClick={(e) => goToUrl("skills")}>Skills</li>
-                    <li className={activeContact ? 'active' : ''} onClick={(e) => goToUrl("contact")}>Contact</li>
+                    <li className={activeAbout ? 'active' : ''} onClick={() => goToUrl("about")}>About</li>
+                    <li className={activeExperience ? 'active' : ''} onClick={() => goToUrl("experience")}>Experience</li>
+                    <li className={activeSkills ? 'active' : ''} onClick={() => goToUrl("skills")}>Skills</li>
+                    <li className={activeContact ? 'active' : ''} onClick={() => goToUrl("contact")}>Contact</li>
                 </ul>
             </div>
             

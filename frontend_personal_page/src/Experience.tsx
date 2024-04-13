@@ -1,12 +1,20 @@
-import React,  { useContext, useEffect, useState } from 'react'
+import  { useContext, useEffect, useState } from 'react'
 import CustomCard from './Card'
 import "./assets/experience.css"
 import ExperienceData from "./experience.json"
 import { RouterContext } from './context/routerContext'
 
+interface DataInterface{
+    company: string;
+    dates: string;
+    description: string[];
+    logo: string;
+    role: string;
+}
 function Experience() {
     const {activeExperience} = useContext(RouterContext)
-    const [data, setData] = useState([])
+    const [data, setData] = useState<DataInterface[]>([])
+
     useEffect(() => {
         setData(ExperienceData)
     }, [])

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import "./assets/clifton_strength.css"
 import { RouterContext } from './context/routerContext';
 

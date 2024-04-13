@@ -1,4 +1,3 @@
-import React from 'react'
 import ContactButtons from './ContactButtons';
 import "./assets/contact.css"
 import PersonalLogo from '../public/images/imagenCV.jpg'
