@@ -35,7 +35,7 @@ function Skills() {
       plugins: {
         legend: {
           position: 'right' as const,
-          display: true
+          display: false
         },
       },
       scales: {

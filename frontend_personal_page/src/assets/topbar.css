@@ -27,3 +27,36 @@
 li.active {
     border-bottom: 5px solid rgb(1, 73, 62);
 }
+
+/* .burguer-button {
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    .burguer-button {
+        margin-top: 5px;
+        display: block;
+        background-color: #ffffff;
+        float: left;
+        padding: 3px 5px;
+    }
+    .topbar ul{
+        flex-direction: column;
+        z-index: 5;
+        position: fixed;
+        top:5px;
+        left: 30px;
+    }
+    .topbar ul li{
+        padding: 10px;
+    }
+    li.active{
+        background-color: rgb(84, 240, 214);
+        border: none;
+    }
+} */
+
+@media only screen and (max-width: 600px) {
+    .topbar ul li{
+        padding: 10px;
+    }
+}

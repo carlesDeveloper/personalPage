@@ -2,8 +2,16 @@
     background-color: black;
     padding: 15px;
     margin-top: 20px;
-    height: 92vh;
+    max-height: 92vh;
 }
+
+@media only screen and (max-width: 600px) {
+    .clifton__strength__section {
+      flex-direction: column;
+      height: 100%;
+      padding-bottom: 50px;
+    }
+  }
 
 .title__section{
     height: 10vh;
@@ -14,6 +22,13 @@
     text-align: center;
     letter-spacing: 8px;
 }
+@media only screen and (max-width: 600px) {
+    .title__section {
+        font-size: 1.5rem;
+        height: 20px;
+        line-height: 20px;
+    }
+}
 
 .strength__skills{
     display: flex;
@@ -21,12 +36,18 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    width: 50vw;
+    max-width: 50vw;
     margin: auto;
     gap: 5px;
     row-gap: 40px;
-    
 }
+@media only screen and (max-width: 600px) {
+    .strength__skills {
+      max-width: 80%;
+      margin-top: 40px;
+      column-gap: 10px;
+    }
+  }
 
 .skill{
     width: 13vw;
@@ -38,9 +59,17 @@
     font-weight: bold;
     text-align: center;
     margin: auto;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     letter-spacing: 1px;
 }
+@media only screen and (max-width: 600px) {
+    .skill{
+        width: 130px;
+        height: 130px;
+        line-height: 130px;
+        font-size: 0.7rem;
+    }
+  }
 
 .strategy_thinking{
     background-color: rgb(204, 8, 8);
@@ -146,3 +175,4 @@ animation: animarskill3 2s ease-in-out;  /* Retraso de 1s */
         opacity: 1;
     }
 }
+

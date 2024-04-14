@@ -3,9 +3,14 @@
     text-align: center;
     margin: auto;
     background-color: #F0F1F1;
-    height: 92vh;
+    min-height: 92vh;
     padding-top: 5vh;
 }
+@media only screen and (max-width: 600px) {
+    .contact__content {
+      height: 100%;
+    }
+  }
 .contact__title{
     font-size: 1.8rem;
     font-weight: bold;
@@ -22,6 +27,13 @@
     margin-top: 100px;
     background-color: #FFFFFF;
 }
+
+@media only screen and (max-width: 600px) {
+    .contact__modal {
+      width: 90%;
+    }
+  }
+
 .personal__logo img{
     position: absolute;
     top: -64px;
@@ -32,10 +44,15 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     animation: infinite;
     animation-name: arribaAbajo;
-    animation-duration: 3s;
-    
-    
+    animation-duration: 3s; 
 }
+
+@media only screen and (max-width: 600px) {
+    .personal__logo img {
+        top: 63%;
+        left: 39%;
+    }
+  }
 
 @keyframes arribaAbajo{
     0%{top: -64px;}
