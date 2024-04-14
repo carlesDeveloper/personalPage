@@ -58,5 +58,6 @@ li.active {
 @media only screen and (max-width: 600px) {
     .topbar ul li{
         padding: 10px;
+        position: sticky;
     }
 }

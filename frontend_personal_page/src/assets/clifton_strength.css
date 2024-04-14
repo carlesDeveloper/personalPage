@@ -2,7 +2,7 @@
     background-color: black;
     padding: 15px;
     margin-top: 20px;
-    max-height: 92vh;
+    height: 92vh;
 }
 
 @media only screen and (max-width: 600px) {

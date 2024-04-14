@@ -25,6 +25,7 @@ ChartJS.register(
 function Skills() {
     const labels = skillsData.map(s => s.skill)
     const options = {
+      maintainAspectRatio: false,
       indexAxis: 'y' as const,
       elements: {
         bar: {
