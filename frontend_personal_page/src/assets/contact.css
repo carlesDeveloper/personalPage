@@ -5,6 +5,7 @@
     background-color: #F0F1F1;
     min-height: 92vh;
     padding-top: 5vh;
+    padding-bottom: 50px;
 }
 @media only screen and (max-width: 600px) {
     .contact__content {
@@ -36,8 +37,8 @@
 
 .personal__logo img{
     position: absolute;
-    top: -64px;
-    right: 522px;
+    top: 63%;
+    left: 46%;
     width: 100px;
     border-radius: 100%;
     border: 10px solid white;
@@ -53,6 +54,12 @@
         left: 39%;
     }
   }
+@media only screen and (max-width: 1000px) and (min-width: 600px) {
+  .personal__logo img {
+      top: 63%;
+      left: 42%;
+  }
+}
 
 @keyframes arribaAbajo{
     0%{top: -64px;}

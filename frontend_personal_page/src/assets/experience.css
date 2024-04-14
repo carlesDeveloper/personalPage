@@ -4,6 +4,7 @@
     min-height: 92vh;
     background-color: #F0F1F1;
     padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
 .experience__title{
@@ -23,6 +24,7 @@
     align-items: flex-start;
     gap: 50px;
     background-color: #F0F1F1;
+    flex-wrap: wrap;
 }
 
 .header__card{
@@ -97,3 +99,9 @@
         animation: none;
     }
   }
+
+@media only screen and (max-width: 1000px) {
+    .card__animation{
+        animation: none;
+    }
+}
