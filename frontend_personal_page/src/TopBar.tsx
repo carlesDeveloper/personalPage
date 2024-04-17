@@ -36,7 +36,7 @@ function TopBar(){
 
     return(
         <>
-            <div className='topbar sticky'>
+            <header className='topbar'>
                 {/* <button className="burguer-button" onClick={() => toggleMenu(menuOpen)}>
                     <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
                 </button> */}
@@ -49,7 +49,7 @@ function TopBar(){
                 </ul>
                 {/* ): null} */}
                 
-            </div>
+            </header>
             
         </>
     )
