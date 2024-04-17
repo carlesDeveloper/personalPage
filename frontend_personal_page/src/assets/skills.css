@@ -10,12 +10,12 @@
 }
 
 .skills__title{
-    font-size: 1.8rem;
+    font-size: 4rem;
     font-weight: bold;
     padding: 5px;
     margin-bottom: 10vh;
     margin-top: 5vh;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.5rem;
 }
 
 .skill__plot{
@@ -27,5 +27,27 @@
         width: 80%;
         height: 80%;
     }
-    
+    .skills__title{
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 5px;
+        margin-bottom: 5vh;
+        margin-top: 5vh;
+        letter-spacing: 0.5rem;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+    .skill__plot{
+        width: 80%;
+        height: 80%;
+    }
+    .skills__title{
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 5px;
+        margin-bottom: 5vh;
+        margin-top: 5vh;
+        letter-spacing: 0.5rem;
+    }
 }

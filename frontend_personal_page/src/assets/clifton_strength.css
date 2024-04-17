@@ -5,29 +5,14 @@
     height: 92vh;
 }
 
-@media only screen and (max-width: 600px) {
-    .clifton__strength__section {
-      flex-direction: column;
-      height: 100%;
-      padding-bottom: 50px;
-    }
-  }
-
 .title__section{
     height: 10vh;
     line-height: 10vh;
     color: white;
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: bold;
     text-align: center;
-    letter-spacing: 8px;
-}
-@media only screen and (max-width: 600px) {
-    .title__section {
-        font-size: 1.5rem;
-        height: 20px;
-        line-height: 20px;
-    }
+    letter-spacing: 0.5rem;
 }
 
 .strength__skills{
@@ -41,13 +26,6 @@
     gap: 5px;
     row-gap: 40px;
 }
-@media only screen and (max-width: 600px) {
-    .strength__skills {
-      max-width: 80%;
-      margin-top: 40px;
-      column-gap: 10px;
-    }
-  }
 
 .skill{
     width: 13vw;
@@ -63,12 +41,27 @@
     letter-spacing: 1px;
 }
 @media only screen and (max-width: 600px) {
+    .title__section {
+        font-size: 1.8rem;
+        height: 20px;
+        line-height: 20px;
+    }
     .skill{
         width: 130px;
         height: 130px;
         line-height: 130px;
         font-size: 0.7rem;
     }
+    .strength__skills {
+        max-width: 80%;
+        margin-top: 40px;
+        column-gap: 10px;
+      }
+      .clifton__strength__section {
+        flex-direction: column;
+        height: 100%;
+        padding-bottom: 50px;
+      }
   }
 
 .strategy_thinking{
@@ -176,3 +169,26 @@ animation: animarskill3 2s ease-in-out;  /* Retraso de 1s */
     }
 }
 
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+    .title__section {
+        font-size: 1.8rem;
+        height: 20px;
+        line-height: 20px;
+    }
+    .skill{
+        width: 170px;
+        height: 170px;
+        line-height: 170px;
+        font-size: 1rem;
+    }
+    .strength__skills {
+        max-width: 80%;
+        margin-top: 40px;
+        column-gap: 10px;
+      }
+      .clifton__strength__section {
+        flex-direction: column;
+        height: 100%;
+        padding-bottom: 50px;
+      }
+}

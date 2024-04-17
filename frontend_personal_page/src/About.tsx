@@ -6,7 +6,7 @@ function About() {
         <>
             <div className='about__content' id='about'>
                 <div className='about__title'>
-                    <h2>About me</h2>
+                    About me
                 </div>
                 <div className="about__text">
                     <p>Web Developer with 5 years of experience, responsible for creating software solutions. </p>

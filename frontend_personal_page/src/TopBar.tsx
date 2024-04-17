@@ -36,7 +36,7 @@ function TopBar(){
 
     return(
         <>
-            <div className='topbar'>
+            <div className='topbar sticky'>
                 {/* <button className="burguer-button" onClick={() => toggleMenu(menuOpen)}>
                     <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
                 </button> */}
