@@ -23,7 +23,7 @@ jobs:
       - name: Build for production
         run: |
           cd frontend_personal_page
-          npm inrun build
+          npm run build
 
       - name: Deploy to Hostinger
         uses: s0/git-publish-subdir-action@develop
