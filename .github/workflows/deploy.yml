@@ -1,0 +1,37 @@
+name: Deploy to Hostinger
+
+on:
+  push:
+    branches: [ main ]  # Change 'main' to your branch name if different
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Use Node.js 16
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Install dependencies
+        run: npm install  # Change to 'yarn install' if using yarn
+
+      - name: Build for production
+        run: npm run build  # Change to 'yarn build' if using yarn
+
+      - name: Deploy to Hostinger
+        uses: peaceiris/actions-ftp@v3
+        with:
+          url: ${{ secrets.HOSTINGER_URL }}  # Replace with your Hostinger FTP URL
+          username: ${{ secrets.HOSTINGER_USERNAME }}  # Replace with your Hostinger username
+          password: ${{ secrets.HOSTINGER_PASSWORD }}  # Replace with your Hostinger password
+          passive: true
+          local_directory: dist/  # Change 'dist' to your build output directory
+          remote_directory: your_hosting_directory/  # Replace with your desired directory on Hostinger
+
+secrets:
+  HOSTINGER_URL: ${{ secrets.HOSTINGER_URL }}
+  HOSTINGER_USERNAME: ${{ secrets.HOSTINGER_USERNAME }}
+  HOSTINGER_PASSWORD: ${{ secrets.HOSTINGER_PASSWORD }}
