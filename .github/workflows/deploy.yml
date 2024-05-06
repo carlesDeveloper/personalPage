@@ -22,7 +22,7 @@ jobs:
         run: npm run build  # Change to 'yarn build' if using yarn
 
       - name: Deploy to Hostinger
-        uses: peaceiris/actions-ftp@v3
+        uses: s0/git-publish-subdir-action@develop
         with:
           url: ${{ secrets.HOSTINGER_URL }}  # Replace with your Hostinger FTP URL
           username: ${{ secrets.HOSTINGER_USERNAME }}  # Replace with your Hostinger username
