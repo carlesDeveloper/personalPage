@@ -16,6 +16,7 @@ jobs:
           node-version: 16
 
       - name: Install dependencies
+        run: cd frontend_personal_page
         run: npm install  # Change to 'yarn install' if using yarn
 
       - name: Build for production
