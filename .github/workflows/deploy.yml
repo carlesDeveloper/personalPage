@@ -30,8 +30,3 @@ jobs:
           passive: true
           local_directory: dist/  # Change 'dist' to your build output directory
           remote_directory: your_hosting_directory/  # Replace with your desired directory on Hostinger
-
-secrets:
-  HOSTINGER_URL: ${{ secrets.HOSTINGER_URL }}
-  HOSTINGER_USERNAME: ${{ secrets.HOSTINGER_USERNAME }}
-  HOSTINGER_PASSWORD: ${{ secrets.HOSTINGER_PASSWORD }}
