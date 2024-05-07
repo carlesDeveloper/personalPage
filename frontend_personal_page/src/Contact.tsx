@@ -12,7 +12,7 @@ function Contact() {
                         <img src={PersonalLogo}></img>
                     </div>
                     <div className="personal__name">Carles Lloret</div>
-                    <div className="personal__description">Thanks for visiting! Send me a connection request on Linkedin!</div>
+                    <div className="personal__description">Thanks for visiting! Send me a connection request on Linkedin or let's connect over a quick meeting.</div>
                     <ContactButtons />
                 </div>
             </div>
