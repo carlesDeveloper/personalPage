@@ -28,6 +28,6 @@ jobs:
       - name: Deploy to Hostinger
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ${{ secrets.HOSTINGER_URL }}
+          server: ${{ secrets.HOSTINGER_URL_DOMAIN }}
           username: ${{ secrets.HOSTINGER_USERNAME }}
           password: ${{ secrets.HOSTINGER_PASSWORD }}
