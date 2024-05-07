@@ -26,11 +26,10 @@ jobs:
           npm run build
 
       - name: Deploy to Hostinger
-        uses: s0/git-publish-subdir-action@develop
+        uses: easingthemes/ftp-publish-action@v1
         with:
-          url: ${{ secrets.HOSTINGER_URL }}  # Replace with your Hostinger FTP URL
-          username: ${{ secrets.HOSTINGER_USERNAME }}  # Replace with your Hostinger username
-          password: ${{ secrets.HOSTINGER_PASSWORD }}  # Replace with your Hostinger password
-          passive: true
-          local_directory: dist/  # Change 'dist' to your build output directory
-          remote_directory: your_hosting_directory/  # Replace with your desired directory on Hostinger
+          ftp-server: ${{ secrets.HOSTINGER_URL }} # Define este secreto en la configuración de tu repositorio
+          ftp-username: ${{ secrets.HOSTINGER_USERNAME }} # Define este secreto en la configuración de tu repositorio
+          ftp-password: ${{ secrets.HOSTINGER_PASSWORD }} # Define este secreto en la configuración de tu repositorio
+          local-dir: dist # Directorio donde se encuentra el build de tu proyecto
+          remote-dir: /public_html # Directorio remoto en Hostinger
