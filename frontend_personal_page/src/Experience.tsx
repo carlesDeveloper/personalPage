@@ -1,7 +1,7 @@
 import  { useContext, useEffect, useState } from 'react'
 import CustomCard from './Card'
 import "./assets/experience.css"
-import ExperienceData from "./experience.json"
+import ExperienceData from "./data/experience.json"
 import { RouterContext } from './context/routerContext'
 
 interface DataInterface{

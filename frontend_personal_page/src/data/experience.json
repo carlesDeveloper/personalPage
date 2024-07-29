@@ -1,5 +1,19 @@
 [
     {
+        "company": "Mitico",
+        "logo": "images/mitico_logo.png",
+        "role": "Frontend developer",
+        "dates": "May 2024 - Currently",
+        "description": [
+            "UI library creation and development.",
+            "Frontend development from scratch using React, Vite, SCSS, styled components.",
+            "Integration of a player SDK with React.",
+            "WordPress development and maintenance.",
+            "Task management with Jira and agile methodologies",
+            "Git for code management"   
+        ]
+    },
+    {
         "company": "Future Connections",
         "logo": "images/logo_futureconnections_mini.jpeg",
         "role": "Fullstack developer",
