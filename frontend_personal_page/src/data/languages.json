@@ -2,17 +2,17 @@
     {
         "language": "English",
         "icon": "images/english_flag.png",
-        "score": "8"
+        "score": 8
     },
     {
         "language": "Spanish",
         "icon": "images/spain_flag.png",
-        "score": "10"
+        "score": 10
     },
     {
         "language": "Catalonian",
-        "icon": "images/logo_futureconnections_mini.jpeg",
-        "score": "10"
+        "icon": "images/catalonian_flag.png",
+        "score": 10
     }
     
     

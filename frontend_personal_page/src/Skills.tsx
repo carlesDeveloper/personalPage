@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { Nav } from 'reactstrap';
 import SkillsNav from './SkillsNav';
-import SkillsChart from './SkillsChart';
+import SkillsChart from './charts/SkillsChart';
 import skillsData from "./data/skills.json";
 import LanguagesData from "./data/languages.json";
 import "./assets/skills.css";
+import BarChartWithIcons from './charts/LanguagesChart';
 
 function Skills() {
   const [skillsSelected, setSkillsSelected] = useState<string>("coding");
@@ -21,7 +22,13 @@ function Skills() {
           Skills
         </div>
         <SkillsNav selectSkills={selectSkills} />
-        <SkillsChart skillsSelected={skillsSelected} skillsData={skillsData} languagesData={LanguagesData} />
+        {skillsSelected === "coding" ? (
+          <SkillsChart skillsSelected={skillsSelected} skillsData={skillsData} languagesData={LanguagesData} /> 
+        ): (
+          <BarChartWithIcons />
+        )}
+        
+        
       </div>
     </>
   );
