@@ -11,7 +11,7 @@
 }
 
 .linkedin__contact a{
-    width: 322px;
+    width: 100%;
     height: 100%;
 }   
 .linkedin__contact svg{
@@ -39,7 +39,7 @@
 }
 
 .calendly-div button{
-    width: 290px;
+    width: 100%;
     font-size: 1.2rem;
     background-color: #7FFFD4;
     color: #000000;
@@ -79,7 +79,7 @@
     }
     .linkedin__contact a{
         margin-top: 20px;
-        width: 96%;
+        width: 100%;
     }
     .linkedin__contact svg{
         top: 20px;
@@ -89,5 +89,15 @@
     
     .calendly-div button{
         /* width: 100%; */
+    }
+}
+
+@media only screen and (min-width: 800px){
+    .linkedin__contact a{
+        width: 322px;
+    }
+
+    .calendly-div button{
+        width: 290px;
     }
 }
