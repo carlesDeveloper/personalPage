@@ -85,10 +85,16 @@
 @media only screen and (max-width: 600px) {
     .experience__cards {
       flex-direction: column;
-      width: 100%;
-      margin-left: 20px;
+      /* width: 100%; */
+      margin: 30px 20px;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
     }
 
+    .card{
+        width: 95vw;
+    }
     .card-body{
         width: 90%;
     }
