@@ -22,7 +22,7 @@ export function Stack() {
                 {category.tools.map((tool) => (
                   <li key={tool}>
                     <BrandIcon name={tool} />
-                    {tool}
+                    <span>{tool}</span>
                   </li>
                 ))}
               </ul>

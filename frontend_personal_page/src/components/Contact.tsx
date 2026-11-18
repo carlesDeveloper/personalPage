@@ -29,7 +29,7 @@ export function Contact() {
             >
               <strong>
                 <ContactIcon id={link.id} />
-                {link.label}
+                <span>{link.label}</span>
               </strong>
               <span>{link.description}</span>
             </Magnetic>

@@ -33,8 +33,10 @@ function ProjectCard({ project, index }: { project: ProjectItem; index: number }
             alt={project.logoAlt}
             initials={project.initials}
           />
-          <h3>{project.title}</h3>
-          <ExternalIcon className="project-external" />
+          <h3>
+            {project.title}
+            <ExternalIcon className="project-external" />
+          </h3>
         </div>
         <p className="project-subtitle">{project.subtitle}</p>
         <p className="project-description">{project.description}</p>

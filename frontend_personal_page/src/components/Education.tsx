@@ -19,7 +19,7 @@ export function Education() {
             <article className="edu-card">
               <h3>
                 <LuGraduationCap aria-hidden="true" />
-                {degree.title}
+                <span>{degree.title}</span>
               </h3>
               <p className="edu-meta">
                 {degree.institution} · {degree.dates}
@@ -34,12 +34,14 @@ export function Education() {
               <p className="certs-label">{education.certificationsLabel}</p>
               <h3>
                 <LuAward aria-hidden="true" />
-                {cert.title}
+                <span>{cert.title}</span>
               </h3>
               <p className="cert-issuer">
                 <IssuerIcon issuer={cert.issuer} />
-                {cert.issuer}
-                {cert.dates ? ` · ${cert.dates}` : ''}
+                <span>
+                  {cert.issuer}
+                  {cert.dates ? ` · ${cert.dates}` : ''}
+                </span>
               </p>
             </article>
           </Reveal>
