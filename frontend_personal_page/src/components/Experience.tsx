@@ -1,5 +1,8 @@
-import { useReducedMotion, motion } from 'framer-motion'
+import { motion, useReducedMotion, useScroll } from 'framer-motion'
+import { useRef } from 'react'
+import { LuBriefcase, LuBuilding2, LuCalendar, LuMapPin } from 'react-icons/lu'
 import { experience, type ExperienceItem } from '../data/content'
+import { BrandIcon } from './BrandIcon'
 import { Section } from './Section'
 
 function TimelineItem({ item, index }: { item: ExperienceItem; index: number }) {
@@ -14,14 +17,20 @@ function TimelineItem({ item, index }: { item: ExperienceItem; index: number }) 
       transition={{ duration: 0.5, delay: index * 0.06, ease: [0.22, 1, 0.36, 1] }}
     >
       <span className="timeline-dot" aria-hidden="true" />
-      <p className="timeline-role">{item.role}</p>
+      <p className="timeline-role">
+        <LuBriefcase aria-hidden="true" />
+        {item.role}
+      </p>
       <p className="timeline-company">
+        <LuBuilding2 aria-hidden="true" />
         {item.company}
         {item.companyLegal ? ` (${item.companyLegal})` : ''}
       </p>
       <p className="timeline-meta">
+        <LuCalendar aria-hidden="true" />
         {item.dates}
         {' · '}
+        <LuMapPin aria-hidden="true" />
         {item.location}
         {item.type ? ` · ${item.type}` : ''}
       </p>
@@ -30,6 +39,7 @@ function TimelineItem({ item, index }: { item: ExperienceItem; index: number }) 
         <ul className="chips">
           {item.skills.map((skill) => (
             <li key={skill} className="chip">
+              <BrandIcon name={skill} />
               {skill}
             </li>
           ))}
@@ -40,13 +50,28 @@ function TimelineItem({ item, index }: { item: ExperienceItem; index: number }) 
 }
 
 export function Experience() {
+  const ref = useRef<HTMLOListElement>(null)
+  const reduced = Boolean(useReducedMotion())
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ['start 0.8', 'end 0.25'],
+  })
+
   return (
-    <Section id="experiencia" kicker={experience.kicker} title={experience.title}>
-      <ol className="timeline">
-        {experience.items.map((item, index) => (
-          <TimelineItem key={`${item.company}-${item.dates}`} item={item} index={index} />
-        ))}
-      </ol>
+    <Section id="experiencia" kicker={experience.kicker} title={experience.title} icon={<LuBriefcase />}>
+      <div className="timeline-wrap">
+        <div className="timeline-track" aria-hidden="true">
+          <motion.div
+            className="timeline-progress"
+            style={{ scaleY: reduced ? 1 : scrollYProgress }}
+          />
+        </div>
+        <ol ref={ref} className="timeline">
+          {experience.items.map((item, index) => (
+            <TimelineItem key={`${item.company}-${item.dates}`} item={item} index={index} />
+          ))}
+        </ol>
+      </div>
     </Section>
   )
 }
