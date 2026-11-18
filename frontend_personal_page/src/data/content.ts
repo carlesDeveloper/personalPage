@@ -12,14 +12,17 @@ export type ExperienceItem = {
   location: string
   skills: readonly string[]
   summary?: string
+  logo?: string
+  initials: string
 }
 
 export type ProjectItem = {
   title: string
   url: string
   description: string
-  image?: string
-  imageAlt: string
+  logo?: string
+  logoAlt: string
+  initials: string
   accent: string
 }
 
@@ -41,9 +44,12 @@ export type CertificationItem = {
   issuer: string
 }
 
+export type LanguageFlag = 'es' | 'en' | 'va'
+
 export type LanguageItem = {
   name: string
   level: string
+  flag: LanguageFlag
 }
 
 export type ContactLink = {
@@ -127,6 +133,8 @@ export const experience = {
       location: 'Valencia (híbrido)',
       skills: ['React.js', 'TypeScript'],
       summary: 'Ingeniería de software frontend.',
+      logo: '/logos/companies/hessstec.png',
+      initials: 'HS',
     },
     {
       role: 'Frontend Developer',
@@ -135,6 +143,7 @@ export const experience = {
       location: 'Madrid (híbrido)',
       skills: ['React.js', 'TypeScript', 'CI/CD', 'Linux', 'Firebase', 'AWS'],
       summary: 'Desarrollo frontend.',
+      initials: 'MI',
     },
     {
       role: 'Software Developer',
@@ -143,6 +152,8 @@ export const experience = {
       location: 'Málaga',
       skills: ['bases de datos', 'TypeScript', 'PostgreSQL', 'Node.js', 'Linux'],
       summary: 'Desarrollo de software.',
+      logo: '/logos/companies/future-connections.png',
+      initials: 'FC',
     },
     {
       role: 'Web Developer & Data Scientist',
@@ -151,6 +162,7 @@ export const experience = {
       location: 'Madrid',
       skills: ['Linux sysadmin', 'JavaScript'],
       summary: 'Desarrollo web y ciencia de datos.',
+      initials: 'AV',
     },
     {
       role: 'Data Analyst',
@@ -159,6 +171,8 @@ export const experience = {
       location: 'Madrid',
       skills: [],
       summary: 'Análisis de datos.',
+      logo: '/logos/companies/ymedia.png',
+      initials: 'YM',
     },
     {
       role: 'Trainee Analyst',
@@ -167,6 +181,8 @@ export const experience = {
       location: 'Madrid',
       skills: [],
       summary: 'Prácticas de análisis.',
+      logo: '/logos/companies/webedia.png',
+      initials: 'WE',
     },
   ] satisfies ExperienceItem[],
 } as const
@@ -181,8 +197,9 @@ export const projects = {
       url: 'https://nexachess.com',
       description:
         'Plataforma de análisis y entrenamiento de partidas de Lichess y Chess.com: análisis con Stockfish, por fases y seguimiento del rendimiento.',
-      image: '/images/projects/nexachess.png',
-      imageAlt: 'Captura de NexaChess, plataforma de análisis de partidas de ajedrez',
+      logo: '/logos/projects/nexachess.png',
+      logoAlt: 'Logo de NexaChess',
+      initials: 'NX',
       accent: '#7ee0c3',
     },
     {
@@ -190,8 +207,9 @@ export const projects = {
       url: 'https://votasinruido.es',
       description:
         'Comparador apartidista de propuestas de los partidos políticos, organizadas por temas y con enlace a la fuente.',
-      image: '/images/projects/votasinruido.png',
-      imageAlt: 'Captura de Vota sin ruido, comparador de propuestas electorales',
+      logo: '/logos/projects/votasinruido.svg',
+      logoAlt: 'Logo de Vota sin ruido',
+      initials: 'VR',
       accent: '#e4c58a',
     },
     {
@@ -199,8 +217,9 @@ export const projects = {
       url: 'https://extractinvoice.io',
       description:
         'SaaS de extracción de datos de facturas con IA. Extract Invoice | AI Invoice Data Extraction Tool.',
-      image: '/images/projects/extractinvoice.png',
-      imageAlt: 'Captura de Extract Invoice, herramienta de extracción de datos de facturas',
+      logo: '/logos/projects/extractinvoice.png',
+      logoAlt: 'Logo de Extract Invoice',
+      initials: 'EI',
       accent: '#9bb7ff',
     },
   ] satisfies ProjectItem[],
@@ -288,9 +307,9 @@ export const languages = {
   kicker: '06',
   title: 'Idiomas',
   items: [
-    { name: 'Castellano', level: 'Nativo' },
-    { name: 'Valenciano', level: 'Nativo' },
-    { name: 'Inglés', level: 'Profesional básico' },
+    { name: 'Español', level: 'Nativo', flag: 'es' },
+    { name: 'Inglés', level: 'Profesional básico', flag: 'en' },
+    { name: 'Valenciano', level: 'Nativo', flag: 'va' },
   ] satisfies LanguageItem[],
 } as const
 
