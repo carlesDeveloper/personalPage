@@ -79,7 +79,8 @@ export const site = {
     'Portfolio de Carles Lloret Ramon, ingeniero de software en HESStec. Frontend con React y TypeScript. Madrid, España.',
   skipLabel: 'Saltar al contenido',
   photo: {
-    src: '/images/imagenCV.jpg',
+    src: '/images/avatar.jpg',
+    webp: '/images/avatar.webp',
     alt: 'Retrato de Carles Lloret Ramon',
   },
   pitch:
