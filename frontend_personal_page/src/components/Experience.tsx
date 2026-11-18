@@ -1,8 +1,9 @@
 import { motion, useReducedMotion, useScroll } from 'framer-motion'
 import { useRef } from 'react'
-import { LuBriefcase, LuBuilding2, LuCalendar, LuMapPin } from 'react-icons/lu'
+import { LuBriefcase, LuCalendar, LuMapPin } from 'react-icons/lu'
 import { experience, type ExperienceItem } from '../data/content'
 import { BrandIcon } from './BrandIcon'
+import { LogoMark } from './LogoMark'
 import { Section } from './Section'
 
 function TimelineItem({ item, index }: { item: ExperienceItem; index: number }) {
@@ -17,15 +18,24 @@ function TimelineItem({ item, index }: { item: ExperienceItem; index: number }) 
       transition={{ duration: 0.5, delay: index * 0.06, ease: [0.22, 1, 0.36, 1] }}
     >
       <span className="timeline-dot" aria-hidden="true" />
-      <p className="timeline-role">
-        <LuBriefcase aria-hidden="true" />
-        {item.role}
-      </p>
-      <p className="timeline-company">
-        <LuBuilding2 aria-hidden="true" />
-        {item.company}
-        {item.companyLegal ? ` (${item.companyLegal})` : ''}
-      </p>
+      <div className="timeline-head">
+        <LogoMark
+          className="company-mark"
+          src={item.logo}
+          alt={`Logo de ${item.company}`}
+          initials={item.initials}
+        />
+        <div className="timeline-copy">
+          <p className="timeline-role">
+            <LuBriefcase aria-hidden="true" />
+            {item.role}
+          </p>
+          <p className="timeline-company">
+            {item.company}
+            {item.companyLegal ? ` (${item.companyLegal})` : ''}
+          </p>
+        </div>
+      </div>
       <p className="timeline-meta">
         <LuCalendar aria-hidden="true" />
         {item.dates}

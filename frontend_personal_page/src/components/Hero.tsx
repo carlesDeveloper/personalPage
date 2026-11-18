@@ -53,8 +53,8 @@ export function Hero() {
           className="hero-photo"
           src={site.photo.src}
           alt={site.photo.alt}
-          width={480}
-          height={600}
+          width={400}
+          height={400}
           fetchPriority="high"
         />
       </motion.div>

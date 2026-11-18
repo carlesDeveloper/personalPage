@@ -1,4 +1,3 @@
-import { lazy, Suspense } from 'react'
 import { About } from './components/About'
 import { AuroraBackground } from './components/AuroraBackground'
 import { Contact } from './components/Contact'
@@ -14,23 +13,13 @@ import { SkipLink } from './components/SkipLink'
 import { Stack } from './components/Stack'
 import { Strengths } from './components/Strengths'
 import { sectionIds } from './data/content'
-import { useMotionProfile } from './hooks/useMotionProfile'
-
-const CursorGlow = lazy(() => import('./components/CursorGlow'))
 
 function App() {
-  const { desktopEffects } = useMotionProfile()
-
   return (
     <div className="site">
       <SkipLink />
       <IntroOverlay />
       <AuroraBackground />
-      {desktopEffects ? (
-        <Suspense fallback={null}>
-          <CursorGlow />
-        </Suspense>
-      ) : null}
       <Nav sectionIds={sectionIds} />
       <main id="contenido" tabIndex={-1}>
         <Hero />

@@ -1,7 +1,8 @@
-import { useState, type CSSProperties } from 'react'
+import type { CSSProperties } from 'react'
 import { LuLayers } from 'react-icons/lu'
 import { projects, type ProjectItem } from '../data/content'
 import { ExternalIcon } from './icons'
+import { LogoMark } from './LogoMark'
 import { Reveal } from './Reveal'
 import { Section } from './Section'
 import { TiltCard } from './TiltCard'
@@ -15,9 +16,6 @@ function ProjectCard({
   index: number
   featured: boolean
 }) {
-  const [failed, setFailed] = useState(false)
-  const showImage = Boolean(project.image) && !failed
-
   return (
     <Reveal delay={index * 0.08} className={featured ? 'project-featured' : undefined}>
       <TiltCard featured={featured}>
@@ -27,19 +25,15 @@ function ProjectCard({
             href={project.url}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={`${projects.visit} ${project.title}`}
             style={{ '--project-accent': project.accent } as CSSProperties}
           >
-            {showImage ? (
-              <img
-                src={project.image}
-                alt={project.imageAlt}
-                loading="lazy"
-                decoding="async"
-                onError={() => setFailed(true)}
-              />
-            ) : (
-              <div className="project-fallback">{project.title}</div>
-            )}
+            <LogoMark
+              className="project-logo"
+              src={project.logo}
+              alt={project.logoAlt}
+              initials={project.initials}
+            />
           </a>
           <div className="project-body">
             <h3>{project.title}</h3>
