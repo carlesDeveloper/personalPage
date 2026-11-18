@@ -20,7 +20,9 @@ export type ExperienceItem = {
 export type ProjectItem = {
   title: string
   url: string
+  subtitle: string
   description: string
+  tags: readonly string[]
   logo?: string
   logoAlt: string
   initials: string
@@ -220,12 +222,16 @@ export const projects = {
   kicker: '03',
   title: 'Proyectos',
   visit: 'Visitar sitio',
+  kind: 'Aplicación web',
+  live: 'En producción',
   items: [
     {
       title: 'NexaChess',
       url: 'https://nexachess.com',
+      subtitle: 'Plataforma de análisis y entrenamiento de partidas de Lichess y Chess.com',
       description:
-        'Plataforma de análisis y entrenamiento de partidas de Lichess y Chess.com: análisis con Stockfish, por fases y seguimiento del rendimiento.',
+        'Análisis con Stockfish, por fases y seguimiento del rendimiento.',
+      tags: ['Ajedrez', 'Análisis', 'Web'],
       logo: '/logos/projects/nexachess.png',
       logoAlt: 'Logo de NexaChess',
       initials: 'NX',
@@ -234,8 +240,9 @@ export const projects = {
     {
       title: 'Vota sin ruido',
       url: 'https://votasinruido.es',
-      description:
-        'Comparador apartidista de propuestas de los partidos políticos, organizadas por temas y con enlace a la fuente.',
+      subtitle: 'Comparador apartidista de propuestas de los partidos políticos',
+      description: 'Organizadas por temas y con enlace a la fuente.',
+      tags: ['Política', 'España', 'Comparador'],
       logo: '/logos/projects/votasinruido.svg',
       logoAlt: 'Logo de Vota sin ruido',
       initials: 'VR',
@@ -244,8 +251,9 @@ export const projects = {
     {
       title: 'Extract Invoice',
       url: 'https://extractinvoice.io',
-      description:
-        'SaaS de extracción de datos de facturas con IA. Extract Invoice | AI Invoice Data Extraction Tool.',
+      subtitle: 'SaaS de extracción de datos de facturas con IA',
+      description: 'Extract Invoice | AI Invoice Data Extraction Tool.',
+      tags: ['SaaS', 'IA', 'Facturas'],
       logo: '/logos/projects/extractinvoice.png',
       logoAlt: 'Logo de Extract Invoice',
       initials: 'EI',
