@@ -49,14 +49,17 @@ export function Hero() {
         transition={{ duration: animate ? 0.8 : 0, delay: animate ? 0.2 : 0, ease: [0.22, 1, 0.36, 1] }}
       >
         <div className="hero-photo-ring" />
-        <img
-          className="hero-photo"
-          src={site.photo.src}
-          alt={site.photo.alt}
-          width={400}
-          height={400}
-          fetchPriority="high"
-        />
+        <picture>
+          <source srcSet={site.photo.webp} type="image/webp" />
+          <img
+            className="hero-photo"
+            src={site.photo.src}
+            alt={site.photo.alt}
+            width={512}
+            height={512}
+            fetchPriority="high"
+          />
+        </picture>
       </motion.div>
     </section>
   )
