@@ -28,7 +28,7 @@ function TimelineItem({ item, index }: { item: ExperienceItem; index: number }) 
         <div className="timeline-copy">
           <p className="timeline-role">
             <LuBriefcase aria-hidden="true" />
-            {item.role}
+            <span>{item.role}</span>
           </p>
           <p className="timeline-company">
             {item.company}
@@ -38,12 +38,15 @@ function TimelineItem({ item, index }: { item: ExperienceItem; index: number }) 
         </div>
       </div>
       <p className="timeline-meta">
-        <LuCalendar aria-hidden="true" />
-        {item.dates}
-        {' · '}
-        <LuMapPin aria-hidden="true" />
-        {item.location}
-        {item.type ? ` · ${item.type}` : ''}
+        <span className="meta-pair">
+          <LuCalendar aria-hidden="true" />
+          {item.dates}
+        </span>
+        <span className="meta-pair">
+          <LuMapPin aria-hidden="true" />
+          {item.location}
+          {item.type ? ` · ${item.type}` : ''}
+        </span>
       </p>
       {item.summary ? <p className="timeline-summary">{item.summary}</p> : null}
       {item.skills.length > 0 ? (
@@ -51,7 +54,7 @@ function TimelineItem({ item, index }: { item: ExperienceItem; index: number }) 
           {item.skills.map((skill) => (
             <li key={skill} className="chip">
               <BrandIcon name={skill} />
-              {skill}
+              <span>{skill}</span>
             </li>
           ))}
         </ul>

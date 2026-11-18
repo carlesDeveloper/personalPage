@@ -34,7 +34,7 @@ export function Strengths() {
               <Reveal delay={index * 0.04}>
                 <span className="strength-chip">
                   <Icon aria-hidden="true" />
-                  {item}
+                  <span>{item}</span>
                 </span>
               </Reveal>
             </li>
