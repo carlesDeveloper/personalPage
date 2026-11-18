@@ -53,6 +53,12 @@ export type ContactLink = {
   description: string
 }
 
+export type StatItem = {
+  value: number
+  suffix: string
+  label: string
+}
+
 export const site = {
   name: 'Carles Lloret Ramon',
   shortName: 'CL',
@@ -72,6 +78,11 @@ export const site = {
     projects: 'Ver proyectos',
     contact: 'Hablemos',
   },
+} as const
+
+export const intro = {
+  monogram: 'CL',
+  label: 'Carles Lloret Ramon',
 } as const
 
 export const navItems: readonly NavItem[] = [
@@ -94,6 +105,14 @@ export const about = {
     'Tras el grado en Estadística Empresarial y el máster en Analítica Web, pasé del análisis de datos (Webedia e Ymedia) al desarrollo web y de software en Avansis, Future Connections y MITICO.',
   ],
 } as const
+
+export const stats: { items: readonly StatItem[] } = {
+  items: [
+    { value: 9, suffix: '+', label: 'años de trayectoria' },
+    { value: 3, suffix: '', label: 'proyectos en producción' },
+    { value: 6, suffix: '', label: 'roles en equipos' },
+  ],
+}
 
 export const experience = {
   kicker: '02',
@@ -184,15 +203,6 @@ export const projects = {
       imageAlt: 'Captura de Extract Invoice, herramienta de extracción de datos de facturas',
       accent: '#9bb7ff',
     },
-    {
-      title: 'FireForChat',
-      url: 'https://www.fireforchat.com',
-      description:
-        'Widget de chat en tiempo real para sitios web, basado en Firebase/Firestore.',
-      image: '/images/projects/fireforchat.svg',
-      imageAlt: 'FireForChat, widget de chat en vivo para webs',
-      accent: '#ffb38a',
-    },
   ] satisfies ProjectItem[],
 } as const
 
@@ -200,6 +210,21 @@ export const stack = {
   kicker: '04',
   title: 'Stack',
   intro: 'Las herramientas que uso, de la interfaz a la infraestructura.',
+  marquee: [
+    'TypeScript',
+    'JavaScript',
+    'React.js',
+    'HTML5',
+    'CSS3',
+    'Node.js',
+    'PostgreSQL',
+    'Firebase',
+    'AWS',
+    'Linux',
+    'CI/CD',
+    'R',
+    'analítica web',
+  ],
   categories: [
     {
       index: '01',

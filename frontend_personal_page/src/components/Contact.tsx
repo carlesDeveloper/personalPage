@@ -1,24 +1,27 @@
+import { FaLinkedin } from 'react-icons/fa'
+import { LuMessageCircle } from 'react-icons/lu'
+import { SiCalendly, SiGithub } from 'react-icons/si'
 import { contact, type ContactLink } from '../data/content'
-import { CalendarIcon, GitHubIcon, LinkedInIcon } from './icons'
+import { Magnetic } from './Magnetic'
 import { Reveal } from './Reveal'
 import { Section } from './Section'
 
 function ContactIcon({ id }: { id: ContactLink['id'] }) {
-  if (id === 'linkedin') return <LinkedInIcon />
-  if (id === 'github') return <GitHubIcon />
-  return <CalendarIcon />
+  if (id === 'linkedin') return <FaLinkedin />
+  if (id === 'github') return <SiGithub />
+  return <SiCalendly />
 }
 
 export function Contact() {
   return (
-    <Section id="contacto" kicker={contact.kicker} title={contact.title}>
+    <Section id="contacto" kicker={contact.kicker} title={contact.title} icon={<LuMessageCircle />}>
       <Reveal>
         <p className="contact-intro">{contact.intro}</p>
       </Reveal>
-      <div className="contact-grid">
+      <div className="bento bento-contact">
         {contact.links.map((link, index) => (
           <Reveal key={link.id} delay={index * 0.08}>
-            <a
+            <Magnetic
               className="contact-card"
               href={link.href}
               target="_blank"
@@ -29,7 +32,7 @@ export function Contact() {
                 {link.label}
               </strong>
               <span>{link.description}</span>
-            </a>
+            </Magnetic>
           </Reveal>
         ))}
       </div>
