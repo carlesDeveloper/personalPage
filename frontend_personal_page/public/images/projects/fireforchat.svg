@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" role="img" aria-label="FireForChat">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a120c"/>
+      <stop offset="1" stop-color="#0c1016"/>
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="900" fill="url(#bg)"/>
+  <circle cx="1120" cy="180" r="260" fill="#ffb38a" opacity="0.2"/>
+  <circle cx="260" cy="720" r="220" fill="#7ee0c3" opacity="0.14"/>
+  <rect x="620" y="250" width="200" height="140" rx="28" fill="#f3eee4" opacity="0.08"/>
+  <circle cx="680" cy="310" r="22" fill="#7ee0c3"/>
+  <rect x="716" y="292" width="72" height="10" rx="5" fill="#f3eee4" opacity="0.55"/>
+  <rect x="716" y="312" width="48" height="10" rx="5" fill="#f3eee4" opacity="0.3"/>
+  <text x="720" y="500" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="64" fill="#f3eee4">FireForChat</text>
+  <text x="720" y="558" text-anchor="middle" font-family="system-ui, sans-serif" font-size="26" fill="#c4bfb4">Chat en tiempo real para la web</text>
+</svg>
