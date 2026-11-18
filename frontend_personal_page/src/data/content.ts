@@ -252,7 +252,7 @@ export const projects = {
       title: 'Extract Invoice',
       url: 'https://extractinvoice.io',
       subtitle: 'SaaS de extracción de datos de facturas con IA',
-      description: 'Extract Invoice | AI Invoice Data Extraction Tool.',
+      description: 'Convierte PDF, escaneos y fotos de facturas en datos listos para revisar y exportar.',
       tags: ['SaaS', 'IA', 'Facturas'],
       logo: '/logos/projects/extractinvoice.png',
       logoAlt: 'Logo de Extract Invoice',
