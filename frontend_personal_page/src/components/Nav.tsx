@@ -31,7 +31,8 @@ export function Nav({ sectionIds }: NavProps) {
 
   return (
     <header className="nav">
-      <div className="nav-bar container">
+      <div className="nav-bar">
+        <div className="container nav-inner">
         <a className="nav-logo" href="#inicio" onClick={close}>
           <span className="nav-logo-short">{site.shortName}</span>
           <span className="nav-logo-full">Carles Lloret</span>
@@ -60,6 +61,7 @@ export function Nav({ sectionIds }: NavProps) {
           >
             {open ? <CloseIcon /> : <MenuIcon />}
           </button>
+        </div>
         </div>
       </div>
       <nav id="menu-movil" className={`nav-drawer ${open ? 'open' : ''}`} aria-label="Móvil">

@@ -11,8 +11,11 @@ function ProjectCard({ project, index }: { project: ProjectItem; index: number }
   return (
     <Reveal delay={index * 0.08}>
       <article className="project-card">
-        <div
+        <a
           className="project-media"
+          href={project.url}
+          target="_blank"
+          rel="noopener noreferrer"
           style={{ '--project-accent': project.accent } as CSSProperties}
         >
           {showImage ? (
@@ -26,7 +29,7 @@ function ProjectCard({ project, index }: { project: ProjectItem; index: number }
           ) : (
             <div className="project-fallback">{project.title}</div>
           )}
-        </div>
+        </a>
         <div className="project-body">
           <h3>{project.title}</h3>
           <p>{project.description}</p>

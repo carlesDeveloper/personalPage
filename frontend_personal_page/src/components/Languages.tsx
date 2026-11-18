@@ -8,22 +8,10 @@ export function Languages() {
       <div className="lang-list">
         {languages.items.map((item, index) => (
           <Reveal key={item.name} delay={index * 0.06}>
-            <div className="lang-row">
-              <div className="lang-top">
-                <span>{item.name}</span>
-                <span className="lang-level">{item.level}</span>
-              </div>
-              <div
-                className="lang-track"
-                role="meter"
-                aria-valuemin={0}
-                aria-valuemax={1}
-                aria-valuenow={item.fill}
-                aria-label={`${item.name}: ${item.level}`}
-              >
-                <div className="lang-fill" style={{ width: `${item.fill * 100}%` }} />
-              </div>
-            </div>
+            <article className="lang-card">
+              <h3>{item.name}</h3>
+              <p className="lang-level">{item.level}</p>
+            </article>
           </Reveal>
         ))}
       </div>

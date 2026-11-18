@@ -44,7 +44,6 @@ export type CertificationItem = {
 export type LanguageItem = {
   name: string
   level: string
-  fill: number
 }
 
 export type ContactLink = {
@@ -71,7 +70,7 @@ export const site = {
     'Ingeniero de software con foco en frontend (React y TypeScript). Combino el desarrollo de producto con formación en estadística y analítica web.',
   heroCtas: {
     projects: 'Ver proyectos',
-    contact: 'Contactar',
+    contact: 'Hablemos',
   },
 } as const
 
@@ -90,9 +89,9 @@ export const about = {
   kicker: '01',
   title: 'Sobre mí',
   paragraphs: [
-    'Ingeniero de software en HESStec (Hybrid Energy Storage Solutions), donde trabajo con React y TypeScript. Vivo en Madrid y he desarrollado producto en entornos híbridos entre Valencia y Madrid.',
-    'Mi trayectoria une dos mundos: el desarrollo de software y los datos. Tras el grado en Estadística Empresarial y el máster en Analítica Web, empecé en análisis de datos (Webedia e Ymedia) y pasé al desarrollo web y de software en Avansis, Future Connections y MITICO.',
-    'Me interesa construir interfaces claras y mantenibles. Trabajo con atención al detalle, foco en resolver problemas y hábito de colaboración en equipo.',
+    'Mi interés es seguir formándome en mis dos grandes pasiones: el desarrollo web y la ciencia de datos.',
+    'Ingeniero de software en HESStec (Hybrid Energy Storage Solutions), donde trabajo con React y TypeScript. Vivo en Madrid.',
+    'Tras el grado en Estadística Empresarial y el máster en Analítica Web, pasé del análisis de datos (Webedia e Ymedia) al desarrollo web y de software en Avansis, Future Connections y MITICO.',
   ],
 } as const
 
@@ -264,9 +263,9 @@ export const languages = {
   kicker: '06',
   title: 'Idiomas',
   items: [
-    { name: 'Castellano', level: 'Nativo', fill: 1 },
-    { name: 'Valenciano', level: 'Nativo', fill: 1 },
-    { name: 'Inglés', level: 'Profesional básico', fill: 0.55 },
+    { name: 'Castellano', level: 'Nativo' },
+    { name: 'Valenciano', level: 'Nativo' },
+    { name: 'Inglés', level: 'Profesional básico' },
   ] satisfies LanguageItem[],
 } as const
 
@@ -287,9 +286,9 @@ export const strengths = {
 
 export const contact = {
   kicker: '08',
-  title: 'Contacto',
+  title: 'Hablemos',
   intro:
-    '¿Hablamos? Puedes escribirme en LinkedIn, ver código en GitHub o reservar una llamada breve.',
+    'Puedes escribirme por LinkedIn, ver código en GitHub o reservar una conversación breve.',
   links: [
     {
       id: 'linkedin',
