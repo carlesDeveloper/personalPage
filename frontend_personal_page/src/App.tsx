@@ -1,59 +1,37 @@
-import { useEffect, useContext } from 'react'
-import './App.css'
-import Skills from './Skills'
-import Experience from './Experience'
-import Contact from './Contact'
-import Strength from './Strength'
-import TopBar from './TopBar'
-import About from './About'
-import { RouterContext } from './context/routerContext'
-
-
+import { About } from './components/About'
+import { Contact } from './components/Contact'
+import { Education } from './components/Education'
+import { Experience } from './components/Experience'
+import { Footer } from './components/Footer'
+import { Hero } from './components/Hero'
+import { Languages } from './components/Languages'
+import { MeshBackground } from './components/MeshBackground'
+import { Nav } from './components/Nav'
+import { Projects } from './components/Projects'
+import { SkipLink } from './components/SkipLink'
+import { Stack } from './components/Stack'
+import { Strengths } from './components/Strengths'
+import { sectionIds } from './data/content'
 
 function App() {
-  const {setActiveAbout,
-    setActiveExperience,
-    setActiveSkills,
-    setActiveContact} = useContext(RouterContext)
-
-  useEffect(() => {
-    const handleScroll = () => {
-        
-        setActiveAbout(false)
-        setActiveExperience(false)
-        setActiveSkills(false)
-        setActiveContact(false)
-
-        const scrollTop = window.scrollY;
-        if(scrollTop < 780){
-            setActiveAbout(true)
-        } else if(scrollTop < 1600){
-            setActiveExperience(true)
-        } else if(scrollTop < 3300){
-            setActiveSkills(true)
-        }else{
-            setActiveContact(true)
-        }
-    };
-  
-    window.addEventListener('scroll', handleScroll);
-  
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   return (
-    <>
-        
-        <TopBar />
-        {/* <br /> */}
+    <div className="site">
+      <SkipLink />
+      <MeshBackground />
+      <Nav sectionIds={sectionIds} />
+      <main id="contenido" tabIndex={-1}>
+        <Hero />
         <About />
         <Experience />
-        <Skills />
-        <Strength />
+        <Projects />
+        <Stack />
+        <Education />
+        <Languages />
+        <Strengths />
         <Contact />
-    </>
+      </main>
+      <Footer />
+    </div>
   )
 }
 
