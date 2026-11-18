@@ -1,8 +1,14 @@
 import { LuAward, LuGraduationCap } from 'react-icons/lu'
-import { SiGoogle } from 'react-icons/si'
+import { SiGoogle, SiUdemy } from 'react-icons/si'
 import { education } from '../data/content'
 import { Reveal } from './Reveal'
 import { Section } from './Section'
+
+function IssuerIcon({ issuer }: { issuer: string }) {
+  if (issuer.startsWith('Google')) return <SiGoogle aria-hidden="true" />
+  if (issuer === 'Udemy') return <SiUdemy aria-hidden="true" />
+  return <LuAward aria-hidden="true" />
+}
 
 export function Education() {
   return (
@@ -31,8 +37,9 @@ export function Education() {
                 {cert.title}
               </h3>
               <p className="cert-issuer">
-                <SiGoogle aria-hidden="true" />
+                <IssuerIcon issuer={cert.issuer} />
                 {cert.issuer}
+                {cert.dates ? ` · ${cert.dates}` : ''}
               </p>
             </article>
           </Reveal>
