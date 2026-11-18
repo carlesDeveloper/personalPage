@@ -34,6 +34,7 @@ function TimelineItem({ item, index }: { item: ExperienceItem; index: number }) 
             {item.company}
             {item.companyLegal ? ` (${item.companyLegal})` : ''}
           </p>
+          {item.affiliation ? <p className="timeline-affiliation">{item.affiliation}</p> : null}
         </div>
       </div>
       <p className="timeline-meta">

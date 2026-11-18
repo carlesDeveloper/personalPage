@@ -12,6 +12,7 @@ export type ExperienceItem = {
   location: string
   skills: readonly string[]
   summary?: string
+  affiliation?: string
   logo?: string
   initials: string
 }
@@ -42,6 +43,7 @@ export type EducationItem = {
 export type CertificationItem = {
   title: string
   issuer: string
+  dates?: string
 }
 
 export type LanguageFlag = 'es' | 'en' | 'va'
@@ -108,7 +110,7 @@ export const about = {
   paragraphs: [
     'Mi interés es seguir formándome en mis dos grandes pasiones: el desarrollo web y la ciencia de datos.',
     'Ingeniero de software en HESStec (Hybrid Energy Storage Solutions), donde trabajo con React y TypeScript. Vivo en Madrid.',
-    'Tras el grado en Estadística Empresarial y el máster en Analítica Web, pasé del análisis de datos (Webedia e Ymedia) al desarrollo web y de software en Avansis, Future Connections y MITICO.',
+    'Tras el grado en Estadística Empresarial y el máster en Analítica Web, pasé del análisis de datos (Webedia e Ymedia) al desarrollo web y de software en Banco Santander, Future Connections y MITICO.',
   ],
 } as const
 
@@ -139,37 +141,64 @@ export const experience = {
     {
       role: 'Frontend Developer',
       company: 'MITICO',
-      dates: 'may 2024 – ago 2025',
+      dates: 'abr 2024 – may 2025',
       location: 'Madrid (híbrido)',
-      skills: ['React.js', 'TypeScript', 'CI/CD', 'Linux', 'Firebase', 'AWS'],
+      skills: ['React', 'SCSS', 'Tailwind CSS', 'Node.js', 'Firebase', 'AWS', 'Tencent Cloud', 'GitHub Actions'],
       summary: 'Desarrollo frontend.',
       initials: 'MI',
     },
     {
       role: 'Software Developer',
       company: 'Future Connections',
-      dates: 'mar 2022 – feb 2024',
+      dates: 'abr 2022 – feb 2024',
       location: 'Málaga',
-      skills: ['bases de datos', 'TypeScript', 'PostgreSQL', 'Node.js', 'Linux'],
-      summary: 'Desarrollo de software.',
+      skills: [
+        'React',
+        'Angular',
+        'Vue',
+        'HTML',
+        'SASS',
+        'Node.js',
+        'Flask',
+        'PostgreSQL',
+        'Jest',
+        'React Testing Library',
+        'Docker',
+        'GitHub Actions',
+      ],
+      summary: 'Desarrollo de software para clientes de telecomunicaciones como Orange.',
       logo: '/logos/companies/future-connections.png',
       initials: 'FC',
     },
     {
-      role: 'Web Developer & Data Scientist',
-      company: 'Avansis',
+      role: 'Desarrollador full-stack',
+      company: 'Banco Santander',
+      affiliation: 'Departamento de Innovación, a través de Avansis Consulting',
       dates: 'ene 2018 – mar 2022',
       location: 'Madrid',
-      skills: ['Linux sysadmin', 'JavaScript'],
-      summary: 'Desarrollo web y ciencia de datos.',
-      initials: 'AV',
+      skills: [
+        'HTML',
+        'CSS',
+        'JavaScript',
+        'jQuery',
+        'React',
+        'Angular',
+        'Vue',
+        'Node.js',
+        'Django',
+        'Docker',
+      ],
+      summary:
+        'Desarrollo full-stack para varios departamentos de Banco Santander en varios países: HTML, CSS, JavaScript y jQuery; desarrollo y migración de aplicaciones con React, Angular y Vue; backend con Node.js y Django; despliegue con Docker.',
+      logo: '/logos/companies/santander.svg',
+      initials: 'BS',
     },
     {
       role: 'Data Analyst',
       company: 'Ymedia',
       dates: 'ago 2017 – ene 2018',
       location: 'Madrid',
-      skills: [],
+      skills: ['Analítica web', 'Estadística'],
       summary: 'Análisis de datos.',
       logo: '/logos/companies/ymedia.png',
       initials: 'YM',
@@ -179,7 +208,7 @@ export const experience = {
       company: 'Webedia',
       dates: 'feb 2017 – may 2017',
       location: 'Madrid',
-      skills: [],
+      skills: ['Analítica web'],
       summary: 'Prácticas de análisis.',
       logo: '/logos/companies/webedia.png',
       initials: 'WE',
@@ -231,44 +260,52 @@ export const stack = {
   intro: 'Las herramientas que uso, de la interfaz a la infraestructura.',
   marquee: [
     'TypeScript',
-    'JavaScript',
-    'React.js',
-    'HTML5',
-    'CSS3',
+    'JavaScript (ES6+)',
+    'React',
+    'Angular',
+    'Vue',
     'Node.js',
+    'Python',
+    'Django',
+    'Docker',
+    'AWS',
+    'Tailwind CSS',
     'PostgreSQL',
     'Firebase',
-    'AWS',
-    'Linux',
-    'CI/CD',
+    'Git',
+    'Jest',
     'R',
-    'analítica web',
   ],
   categories: [
     {
       index: '01',
       name: 'Lenguajes',
-      tools: ['TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'SQL', 'R'],
+      tools: ['JavaScript (ES6+)', 'TypeScript', 'Python', 'HTML5', 'CSS3', 'SCSS/SASS', 'SQL', 'R'],
     },
     {
       index: '02',
       name: 'Frontend',
-      tools: ['React.js'],
+      tools: ['React', 'Angular', 'Vue', 'jQuery', 'Tailwind CSS'],
     },
     {
       index: '03',
       name: 'Backend',
-      tools: ['Node.js', 'PostgreSQL', 'Firebase'],
+      tools: ['Node.js', 'Flask', 'Django', 'REST APIs', 'microservicios', 'Firebase', 'PostgreSQL'],
     },
     {
       index: '04',
       name: 'Cloud y DevOps',
-      tools: ['AWS', 'CI/CD', 'Linux', 'sysadmin'],
+      tools: ['Docker', 'AWS', 'Tencent Cloud', 'GitHub Actions', 'CI/CD', 'Git', 'Linux & Bash'],
     },
     {
       index: '05',
+      name: 'Calidad y método',
+      tools: ['Jest', 'React Testing Library', 'Agile/Scrum'],
+    },
+    {
+      index: '06',
       name: 'Datos',
-      tools: ['bases de datos', 'analítica web'],
+      tools: ['Analítica web', 'SEO', 'Estadística'],
     },
   ] satisfies StackCategory[],
 } as const
@@ -290,15 +327,22 @@ export const education = {
       dates: '2016–2017',
     },
   ] satisfies EducationItem[],
-  certificationsLabel: 'Certificaciones',
+  certificationsLabel: 'Cursos',
   certifications: [
     {
-      title: 'Curso Analítica Web',
-      issuer: 'Google España',
+      title: 'SEO Fundamentals',
+      issuer: 'Udemy',
+      dates: '2025',
     },
     {
-      title: 'Curso básico de Marketing Digital',
-      issuer: 'Google España',
+      title: 'Marketing Digital',
+      issuer: 'IAB',
+      dates: '2016',
+    },
+    {
+      title: 'Analítica Web',
+      issuer: 'Google-EOI',
+      dates: '2016',
     },
   ] satisfies CertificationItem[],
 } as const
@@ -309,7 +353,7 @@ export const languages = {
   items: [
     { name: 'Español', level: 'Nativo', flag: 'es' },
     { name: 'Inglés', level: 'Profesional básico', flag: 'en' },
-    { name: 'Valenciano', level: 'Nativo', flag: 'va' },
+    { name: 'Valenciano / Catalán', level: 'Nativo', flag: 'va' },
   ] satisfies LanguageItem[],
 } as const
 

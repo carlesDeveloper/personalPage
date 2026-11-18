@@ -728,6 +728,12 @@ ol {
   font-weight: 500;
 }
 
+.timeline-affiliation {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+
 .timeline-meta {
   margin-top: 0.2rem;
   color: var(--text-muted);
@@ -1349,15 +1355,8 @@ ol {
     grid-template-columns: repeat(6, 1fr);
   }
 
-  .bento-stack > :nth-child(1),
-  .bento-stack > :nth-child(2),
-  .bento-stack > :nth-child(3) {
+  .bento-stack > * {
     grid-column: span 2;
-  }
-
-  .bento-stack > :nth-child(4),
-  .bento-stack > :nth-child(5) {
-    grid-column: span 3;
   }
 
   .bento-edu {
